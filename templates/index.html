@@ -1,0 +1,20 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+    <form action="http://projekt-psoir1.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="key" value="uploads/${filename}"> <input type="hidden" name="AWSAccessKeyId" value="AKIAINRWTEGSP7U5CWAA">
+      <input type="hidden" name="acl" value="public-read">
+      <input type="hidden" name="success_action_redirect" value="ec2-35-165-16-124.us-west-2.compute.amazonaws.com/done">
+      <input type="hidden" name="policy" value="CnsKImV4cGlyYXRpb24iOiAiMjAxOC0wOS0xM1QwMDowMDowMFoiLAogICJjb25kaXRpb25zIjogWwogICAgeyJidWNrZXQiOiAicHJvamVrdC1wc29pcjEifSwKICAgIFsic3RhcnRzLXdpdGgiLCAiJGtleSIsICJ1cGxvYWRzLyJdLAogICAgeyJhY2wiOiAicHVibGljLXJlYWQifSwKICAgIHsic3VjY2Vzc19hY3Rpb25fcmVkaXJlY3QiOiAiZWMyLTM1LTE2NS0xNi0xMjQudXMtd2VzdC0yLmNvbXB1dGUuYW1hem9uYXdzLmNvbS9kb25lIn0sCiAgICBbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiaW1hZ2UvIl0sCiAgICBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMCwgMTA0ODU3Nl0KICBdCn0K">
+      <input type="hidden" name="signature" value="DplYIwEQY9uHlb22PIaJsJ1vLlI=">
+      <input type="hidden" name="Content-Type" value="image/jpeg">
+      <!-- Include any additional input fields here -->
+      File to upload to S3: <input name="file" type="file">
+      <br>
+      <input type="submit" value="Upload File to S3">
+    </form>
+  </body>
+</html>
+
